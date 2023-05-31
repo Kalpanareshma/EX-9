@@ -6,64 +6,48 @@
 To write a python program for creating Chat using TCP Sockets Links.
 
 
-### ALGORITHM :
-1.Start the program.
-
-2.Get the frame size from the user.
-
-3.To create the frame based on the user request.
-
-4.To send frames to server from the client side.
-
-5.If your frames reach the server, it will send ACK signal to client otherwise it will sendNACK signal to client.
-
-6.Stop the program
+## ALGORITHM :
+### STEP 1: Start the program.
+### STEP 2: Get the frame size from the user.
+### STEP 3: To create the frame based on the user request.
+### STEP 4: To send frames to server from the client side.
+### STEP 5: If your frames reach the server, it will send ACK signal to client otherwise it will sendNACK signal to client.
+### STEP 6: Stop the program
 
 
 ## CLIENT PROGRAM :
-## Developed : Kalpana S
-## Reg no : 212222040069
+### Developed : Kalpana S
+### Reg no : 212222040069
+```
 import socket
-
 s=socket.socket()
-
 s.connect(('localhost',8000))
-
 while True:
-
     msg=input("Client > ")
-    
     s.send(msg.encode())
-    
     print("Server > ",s.recv(1024).decode())
+```
     
-## SERVER PROGRAM :
+### SERVER PROGRAM :
+```
 import socket
-
 s=socket.socket()
-
 s.bind(('localhost',8000))
-
 s.listen(5)
-
 c,addr=s.accept()
-
 while True:
-
-    ClientMessage=c.recv(1024).decode()
-    
+    ClientMessage=c.recv(1024).decode()   
     print("Client > ",ClientMessage)
-    
     msg=input("Server > ")
-    
     c.send(msg.encode())
+```
 
 
 
 ## OUTPUT :
-## SERVER :
+### SERVER :
 ![EX-09](https://github.com/Kalpanareshma/EX-9/assets/122040453/4cf56973-530a-4c8b-ae72-313875b7fec6)
-## CLIENT :
+### CLIENT :
 ![EX-09 CLIENT](https://github.com/Kalpanareshma/EX-9/assets/122040453/8debd57a-b56e-4466-867c-7d19d83a3afe)
 
 
