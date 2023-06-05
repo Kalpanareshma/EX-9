@@ -46,14 +46,9 @@ while True:
 
 ## OUTPUT :
 ### SERVER :
-![EX-09](https://github.com/Kalpanareshma/EX-9/assets/122040453/4cf56973-530a-4c8b-ae72-313875b7fec6)
+![ex09 server output](https://github.com/Kalpanareshma/EX-9/assets/122040453/4489d5c6-20ad-45e8-a518-b906ead956fd)
 ### CLIENT :
-![EX-09 CLIENT](https://github.com/Kalpanareshma/EX-9/assets/122040453/8debd57a-b56e-4466-867c-7d19d83a3afe)
-
-
-
-
-
+![ex09 client output](https://github.com/Kalpanareshma/EX-9/assets/122040453/5e8a749e-d051-44b6-8544-fa41b2ea0bc4)
 
 ## RESULT :
 Thus, the python program for creating Chat using TCP Sockets Links was successfully created and executed.
